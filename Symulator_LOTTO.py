@@ -1,4 +1,9 @@
-def get_number():  # funkcja pobiera liczbę, którą podał użytkownik i sprawdza jej poprawność
+def get_number():
+    """ Funkcja pobiera liczbę, którą podał użytkownik i sprawdza jej poprawność.
+        Pyta dopóki nie otrzyma poprawnej liczby.
+        :rtype: int
+        :return: pobrana liczba jako int
+    """
     while True:
         try:
             result = int(input("Get the number: "))
@@ -7,7 +12,11 @@ def get_number():  # funkcja pobiera liczbę, którą podał użytkownik i spraw
             print("It's not a number")
     return result
 
-def six_numbers():   # funkcja, która wskazuje sześc liczb wybranych przez użytkownika
+def six_numbers():
+    """ Funkcja, tworzy listę z sześciu liczb podanych przez użytkownika.
+        :rtype: list
+        :return: lista 6 liczb podanych przez użytkowinika
+    """
     result = []
     while len(result) < 6:
         number = get_number()
